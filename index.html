@@ -67,20 +67,24 @@
     <p class="eyebrow">Profil member</p>
     <h2>Siapa itu Greesel</h2>
 
-    <!-- ===== EDIT DI SINI: DATA PROFIL ===== -->
-    <table class="profile-table">
-      <tr><td>Nama lengkap</td><td>Greesella Sophina Adhalia</td></tr>
-      <tr><td>Nama panggung</td><td>Greesel</td></tr>
-      <tr><td>Generasi</td><td>Generasi 11</td></tr>
-      <tr><td>Tanggal lahir</td><td>10 Januari 2006</td></tr>
-      <tr><td>Tempat lahir</td><td>Bogor, Jawa Barat</td></tr>
-      <tr><td>Golongan darah</td><td>O</td></tr>
-      <tr><td>Zodiak</td><td>Capricorn</td></tr>
-      <tr><td>Hobi</td><td>Akting, menonton film, bernyanyi, membaca manga, mendengarkan musik</td></tr>
-      <tr><td>Instagram</td><td><a href="https://www.instagram.com/jkt48.greesel" target="_blank">@jkt48.greesel</a></td></tr>
-      <tr><td>X / Twitter</td><td><a href="https://x.com/Greesel_JKT48" target="_blank">@Greesel_JKT48</a></td></tr>
-    </table>
-    <p class="bio">Greesella Adhalia (Greesel) adalah member JKT48 generasi ke-11 asal Bogor, diperkenalkan pada 31 Oktober 2022 dan resmi menjadi anggota tetap sejak 1 Februari 2024. Kini tergabung di Team Dream. Sebelum bergabung JKT48, ia dikenal sebagai aktris cilik dan bintang iklan, sempat membintangi film Dancing in the Rain (2018).</p>
+    <!-- ===== EDIT DI SINI: DATA PROFIL =====
+         Bio ada di paragraf pertama (class bio-lead). Data singkat ada di
+         bawahnya sebagai kartu-kartu kecil (div.stat) di dalam .stat-grid.
+         Mau tambah/hapus 1 data? Copy/hapus 1 blok <div class="stat">...</div> -->
+    <p class="bio-lead">Greesella Adhalia (Greesel) adalah member JKT48 generasi ke-11 asal Bogor, diperkenalkan pada 31 Oktober 2022 dan resmi menjadi anggota tetap sejak 1 Februari 2024. Kini tergabung di Team Dream. Sebelum bergabung JKT48, ia dikenal sebagai aktris cilik dan bintang iklan, sempat membintangi film Dancing in the Rain (2018).</p>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="label">Nama lengkap</div><div class="value">Greesella Sophina Adhalia</div></div>
+      <div class="stat"><div class="label">Nama panggung</div><div class="value">Greesel</div></div>
+      <div class="stat"><div class="label">Generasi</div><div class="value">Generasi 11</div></div>
+      <div class="stat"><div class="label">Tanggal lahir</div><div class="value">10 Januari 2006</div></div>
+      <div class="stat"><div class="label">Tempat lahir</div><div class="value">Bogor, Jawa Barat</div></div>
+      <div class="stat"><div class="label">Golongan darah</div><div class="value">O</div></div>
+      <div class="stat"><div class="label">Zodiak</div><div class="value">Capricorn</div></div>
+      <div class="stat"><div class="label">Hobi</div><div class="value">Akting, menonton film, bernyanyi, membaca manga, mendengarkan musik</div></div>
+      <div class="stat"><div class="label">Instagram</div><div class="value"><a href="https://www.instagram.com/jkt48.greesel" target="_blank">@jkt48.greesel</a></div></div>
+      <div class="stat"><div class="label">X / Twitter</div><div class="value"><a href="https://x.com/Greesel_JKT48" target="_blank">@Greesel_JKT48</a></div></div>
+    </div>
     <!-- ===== BATAS EDIT ===== -->
   </div>
 </section>
@@ -126,13 +130,6 @@
       <h3>Greesel pindah ke Team Dream</h3>
       <p>Dalam pembentukan ulang tim (Team Dream Formation), Greesel resmi dipindahkan ke Team Dream mulai 1 April 2026, dan kini menjadi satu-satunya anggota aktif generasi 11 di tim tersebut.</p>
       <a class="src" href="https://akb48.fandom.com/wiki/Greesella_Adhalia" target="_blank">Sumber ↗</a>
-    </div>
-
-    <div class="card">
-      <div class="meta"><span class="tag">Berita</span><span class="date">—</span></div>
-      <h3>Greesel lulus PKBM Paket C setara SMA</h3>
-      <p>Greesel merayakan kelulusannya dari PKBM Paket C (setara SMA) dan dikabarkan menjadi siswa terbaik, menjadi sorotan netizen dan fans.</p>
-      <a class="src" href="https://spotlight.indozone.id/seleb/454924978/profil-dan-biodata-greesel-jkt48-generasi-ke-11-yang-jadi-siswa-terbaik" target="_blank">Sumber ↗</a>
     </div>
 
     <div class="card">
@@ -207,14 +204,15 @@
 
     <!-- ===== EDIT DI SINI: TENTANG FANBASE =====
          Kalau info fanbase sudah siap, HAPUS div.coming-soon di bawah,
-         lalu ganti dengan isi seperti contoh tabel yang dikomentari ini:
+         lalu ganti dengan isi seperti contoh di bawah ini (pola sama
+         seperti section Profil):
 
-         <table class="profile-table">
-           <tr><td>Visi & misi</td><td>Isi di sini</td></tr>
-           <tr><td>Sejarah singkat</td><td>Isi di sini</td></tr>
-           <tr><td>Cara gabung</td><td>Isi di sini</td></tr>
-           <tr><td>Kontak admin</td><td>Isi di sini</td></tr>
-         </table> -->
+         <p class="bio-lead">Cerita singkat fanbase di sini.</p>
+         <div class="stat-grid">
+           <div class="stat"><div class="label">Visi dan misi</div><div class="value">Isi di sini</div></div>
+           <div class="stat"><div class="label">Cara gabung</div><div class="value">Isi di sini</div></div>
+           <div class="stat"><div class="label">Kontak admin</div><div class="value">Isi di sini</div></div>
+         </div> -->
     <div class="coming-soon">
       <div class="glow" aria-hidden="true"></div>
       <h3>Halaman ini akan segera hadir</h3>
